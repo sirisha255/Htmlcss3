@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+}
+.wrapper{
+    background:url(istockphoto-1370624052-612x612.jpg) no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+.navbar{
+    height: 80px;
+    width:100%;
+    background: rgba(0,0,0,0,4);
+}
+.logo{
+    width: 100px;
+    height:auto;
+    padding:20px 20px;
+
+}
+.navbar ul{
+    float:right;
+    margin-right:10px;
+}
+.navbar ul li{
+    list-style:none;
+    margin:0 4px;
+    display:inline-block;
+    line-height:40px;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:rgb(21, 14, 14);
+    font-size:15px;
+    padding:6px 13px;
+
+    
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:rgb(80, 247, 185);
+    border-radius:2px;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas:
+        "intrHeadline"
+        "intrSubText"
+        "articalZon";
+    background-color: lightgray;
+}
+
+#intrHeadline {
+    grid-area: intrHeadline;
+    background-color: rgb(255, 0, 242);
+    color: rgb(0, 0, 0);
+}
+
+#intrSubText {
+    grid-area: intrSubText;
+    background-color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
+}
+
+aside{
+    grid-area: aside;
+    background-color:blanchedalmond;
+    color:black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(171, 40, 75);
+    color:white;
+}
